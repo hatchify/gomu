@@ -144,6 +144,8 @@ func gomuOptions() (options gomu.Options) {
 	options.Tag = cmd.BoolFrom("-tag")
 	options.SetVersion = cmd.StringFrom("-set-version")
 
+	options.SourcePath = cmd.StringFrom("-source-path")
+
 	options.DirectImport = cmd.BoolFrom("-direct-import")
 	nameOnly := cmd.BoolFrom("-name-only")
 	if nameOnly {
