@@ -26,7 +26,7 @@ func configureCommand() (cmd *flag.Command, err error) {
 	parg.AddAction("reset", "Reverts go.mod and go.sum back to last committed version.\n  Usage: `gomu reset mod-common parg`")
 	parg.AddAction("test", "Runs `go test` on each library in the dependency chain.\n  Prints names of failing libraries.\n  Usage: `gomu test mod-common`")
 
-	parg.AddAction("sync", "Updates modfiles\n  Conditionally performs extra tasks depending on flags.\n  Usage: `gomu <flags> sync mod-common parg simply <flags>`")
+	parg.AddAction("sync", "Updates modfiles.\n  Conditionally performs extra tasks depending on flags.\n  Usage: `gomu <flags> sync mod-common parg simply <flags>`")
 
 	parg.AddAction("workflow", "Adds a github workflow to a repo.\n  Requires -source <template path>.\n  Usage: `gomu workflow mod-utils -c -b new-workflow -source workflows/templates/autotag.yml`")
 	parg.AddAction("secret", "Adds a secret to a repo's github actions.\n  Requires -source <file containing secret>.\n  Usage: `gomu secret mod-utils -source ~/.ssh/server_key.crt`")

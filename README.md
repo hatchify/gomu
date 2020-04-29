@@ -69,7 +69,7 @@ If running with -name-only, it will NOT prompt you for a warning.
 Please be careful!
 
 ### gomu sync ###
-  :: Updates modfiles
+  :: Updates modfiles.
   Conditionally performs extra tasks depending on flags.
   Usage: `gomu <flags> sync mod-common parg simply <flags>`
 
